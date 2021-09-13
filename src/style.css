@@ -5,6 +5,10 @@ body {
     text-align: center;
     color: white;
     text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    border-top: 6px #AD91FF solid !important;
     line-height: 23px;
     margin-top: 50px;
 }
@@ -15,7 +19,7 @@ h1 {
 text-align: center;
 color: black;
 font-family: courier;
-font-size: 160%;
+font-size: 100%;
 border-left: 6px solid rgb(255, 255, 255);
 background-color: white;
 padding: 30px;
@@ -25,62 +29,61 @@ p {
 text-align: center;
 color: white;
 font-family: courier;
-font-size: 160%;
+font-size: 100%;
 }
 
 .note {
-font-size: 120%;
+font-size: 100%;
 color: rgb(15, 157, 252);
 }
 .note1 {
-font-size: 120%;
+font-size: 100%;
 color: seagreen;
 border: 2px solid seagreen;
-padding: 10px;
+padding: 12px;
 margin: 20px;
 }
 .note2 {
-font-size: 120%;
+font-size: 100%;
 color: royalblue;
 border: 2px solid royalblue;
 padding: 10px;
 margin: 20px;
 }
 .note3 {
-font-size: 120%;
+font-size: 100%;
 color: sandybrown;
 border: 2px solid sandybrown;
 padding: 10px;
 margin: 20px;
 }
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 25%;
-    width: 100%;
-    background-color:rgb(7, 7, 7)d;
-    color: white;
-    text-align: center;
-    padding: 5px 6px !important;
-    color: #ecf2ff;
-    padding: 30px 30px !important
+position: fixed;
+left: 0;
+bottom: 0;
+height: 25%;
+width: 100%;
+background-color:rgb(7, 7, 7)d;
+color: white;
+text-align: center;
+padding: 5px 6px !important;
+color: #ecf2ff;
+padding: 30px 30px !important
 }
 .footer .zenith {
-    font-family: 'Montserrat' !important;
-    font-style: normal !important;
-    font-weight: 600 !important;
-    font-size: 44px !important;
-    line-height: 245px !important;
-    letter-spacing: 0.15em !important;
-    font-variant: small-caps !important;
+font-family: 'Montserrat' !important;
+font-style: normal !important;
+font-weight: 600 !important;
+font-size: 16px !important;
+line-height: 5px !important;
+letter-spacing: 0.15em !important;
+font-variant: small-caps !important;
 }
 .footer .zenith a {
-    color: #AD91FF !important;
-    line-height: 270px !important;
-    text-decoration: none !important;
+color: #AD91FF !important;
+text-decoration: none !important;
 }
 .footer .bot-footer {
-    text-align: center !important;
-    color: #a2a8bd !important
+text-align: center !important;
+color: #a2a8bd !important
 }
