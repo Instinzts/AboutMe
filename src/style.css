@@ -15,21 +15,74 @@ body {
 #pfp {
     border-radius: 100%;
 }
+#none {
+    margin: 30px;
+}
+
 h1 {
 text-align: center;
-color: black;
+text-shadow: transparent;
+color: rgb(252, 249, 249);
 font-family: courier;
-font-size: 100%;
-border-left: 6px solid rgb(255, 255, 255);
-background-color: white;
+font-size: 150%;
+position: relative;
+border-left: 0px solid rgb(255, 255, 255);
 padding: 30px;
 margin: 50px;
+background-color: black;
 }
 .container {
 font-family: 'Courier New', Courier, monospace;
-font-size: 130%;
+font-size: 150%;
 top: 50%;
 left: 50%;
+}
+.btn {
+border-radius: 30px !important;
+line-height: 3;
+font-size: 16px !important;
+font-weight: 600 !important;
+padding: 5px;
+margin: 10px;
+position: relative;
+text-align: center;
+width: 20px;
+text-transform: uppercase;
+cursor: pointer;
+transition: 1.5s;
+text-transform: uppercase !important;
+}
+.btn-secondary {
+color: rgb(248, 85, 85);
+border-radius: 30px;
+line-height: 3;
+border: 1px solid rgb(248, 85, 85);
+padding: 5px;
+margin: 10px;
+position: relative;
+text-align: left;
+width: 20px;
+text-transform: uppercase;
+cursor: pointer;
+transition: 1.5s;
+}
+.heading h1{
+text-align: center;
+font-size: 15px !important;
+border: 1px inset #423d50;
+padding: 10px;
+margin: 20px;
+background-color: #7f7892!important;
+}
+.title {
+line-height: 40px !important;
+margin-bottom: -2px !important;
+font-size: 16px !important
+}
+.subtitle {
+color: rgba(255, 255, 255, 0.994) !important;
+font-size: 15px !important;
+font-family: 'Courier New', Courier, monospace;
 }
 .button {
 color: rgb(14, 205, 238);
@@ -41,8 +94,6 @@ margin: 10px;
 position: relative;
 text-align: center;
 width: 20px;
-padding: 5px;
-margin: 10px;
 text-transform: uppercase;
 cursor: pointer;
 transition: 1.5s;
@@ -114,13 +165,6 @@ text-transform: uppercase;
 cursor: pointer;
 transition: 1.5s;
 }
-.footer {
-overflow: hidden;
-font-size: 12px;
-font-family: cursive;
-position: relative;
-margin-top: 20rem;
-}
 .button:hover {
 box-shadow: 0 5px 30px 0 #93e7f2 inset,  0 5px 30px 0 #93e7f2 inset, 
             0 5px 30px 0 #93e7f2 inset,  0 5px 30px 0 #93e7f2 inset; 
@@ -140,4 +184,10 @@ box-shadow: 0 5px 30px 0 #97f577 inset,  0 5px 30px 0 #97f577 inset,
 .button5:hover {
 box-shadow: 0 5px 30px 0 #e874d0 inset,  0 5px 30px 0 #e874d0 inset, 
             0 5px 30px 0 #e874d0 inset,  0 5px 30px 0 #e874d0 inset; 
+}
+.footer {
+color: white;
+font-family: 'Courier New', Courier, monospace;
+font-size: 150%;
+position: relative;
 }
