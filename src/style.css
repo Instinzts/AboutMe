@@ -31,47 +31,88 @@ font-size: 130%;
 top: 50%;
 left: 50%;
 }
-.note {
-color: rgb(15, 157, 252);
-}
-.note1 {
+.button {
 color: rgb(14, 205, 238);
 border-radius: 30px;
 line-height: 3;
 border: 1px solid rgb(14, 205, 238);
 padding: 5px;
 margin: 10px;
+position: relative;
+text-align: center;
+width: 20px;
+padding: 5px;
+margin: 10px;
+text-transform: uppercase;
+cursor: pointer;
+transition: 1.5s;
 }
-.note2 {
-color: rgb(250, 75, 92);
+.note {
+color: rgb(15, 157, 252);
+}
+.button2 {
+color: rgb(230, 109, 28);
 border-radius: 30px;
 line-height: 3;
-border: 1px solid rgb(250, 75, 92);
+border: 1px solid rgb(230, 109, 28);
 padding: 5px;
 margin: 10px;
+position: relative;
+text-align: center;
+width: 20px;
+padding: 5px;
+margin: 10px;
+text-transform: uppercase;
+cursor: pointer;
+transition: 1.5s;
 }
-.note3 {
-color: sandybrown;
+.button3 {
+color: rgb(238, 167, 14);
 border-radius: 30px;
 line-height: 3;
-border: 1px solid sandybrown;
+border: 1px solid rgb(238, 167, 14);
 padding: 5px;
 margin: 10px;
-}
-.note4 {
-color: rgb(132, 248, 116);
-border-radius: 30px;
-border: 1px solid rgb(132, 248, 116);
+position: relative;
+text-align: center;
+width: 20px;
 padding: 5px;
 margin: 10px;
+text-transform: uppercase;
+cursor: pointer;
+transition: 1.5s;
 }
-.note5 {
-color: rgb(247, 56, 167);
+.button4 {
+color: rgb(89, 240, 51);
 border-radius: 30px;
 line-height: 3;
-border: 1px solid rgb(247, 56, 167);
+border: 1px solid rgb(89, 240, 51);;
 padding: 5px;
 margin: 10px;
+position: relative;
+text-align: center;
+width: 20px;
+padding: 5px;
+margin: 10px;
+text-transform: uppercase;
+cursor: pointer;
+transition: 1.5s;
+}
+.button5 {
+color: rgb(238, 14, 126);
+border-radius: 30px;
+line-height: 3;
+border: 1px solid rgb(238, 14, 126);
+padding: 5px;
+margin: 10px;
+position: relative;
+text-align: center;
+width: 20px;
+padding: 5px;
+margin: 10px;
+text-transform: uppercase;
+cursor: pointer;
+transition: 1.5s;
 }
 .footer {
 overflow: hidden;
@@ -79,4 +120,24 @@ font-size: 12px;
 font-family: cursive;
 position: relative;
 margin-top: 20rem;
+}
+.button:hover {
+box-shadow: 0 5px 30px 0 #93e7f2 inset,  0 5px 30px 0 #93e7f2 inset, 
+            0 5px 30px 0 #93e7f2 inset,  0 5px 30px 0 #93e7f2 inset; 
+}
+.button2:hover {
+box-shadow: 0 5px 30px 0 #fc9b5a inset,  0 5px 30px 0 #fc9b5a inset, 
+            0 5px 30px 0 #fc9b5a inset,  0 5px 30px 0 #fc9b5a inset; 
+}
+.button3:hover {
+box-shadow: 0 5px 30px 0 #f7ee73 inset,  0 5px 30px 0 #f7ee73 inset, 
+            0 5px 30px 0 #f7ee73 inset,  0 5px 30px 0 #f7ee73 inset; 
+}
+.button4:hover {
+box-shadow: 0 5px 30px 0 #97f577 inset,  0 5px 30px 0 #97f577 inset, 
+            0 5px 30px 0 #97f577 inset,  0 5px 30px 0 #97f577 inset; 
+}
+.button5:hover {
+box-shadow: 0 5px 30px 0 #e874d0 inset,  0 5px 30px 0 #e874d0 inset, 
+            0 5px 30px 0 #e874d0 inset,  0 5px 30px 0 #e874d0 inset; 
 }
