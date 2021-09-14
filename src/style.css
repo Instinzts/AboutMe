@@ -137,7 +137,7 @@ transition: 1.5s;
 color: rgb(89, 240, 51);
 border-radius: 30px;
 line-height: 3;
-border: 1px solid rgb(89, 240, 51);;
+border: 1px solid rgb(89, 240, 51);
 padding: 5px;
 margin: 10px;
 position: relative;
@@ -185,9 +185,12 @@ box-shadow: 0 5px 30px 0 #97f577 inset,  0 5px 30px 0 #97f577 inset,
 box-shadow: 0 5px 30px 0 #e874d0 inset,  0 5px 30px 0 #e874d0 inset, 
             0 5px 30px 0 #e874d0 inset,  0 5px 30px 0 #e874d0 inset; 
 }
+<<<<<<< HEAD
 .footer {
 color: white;
 font-family: 'Courier New', Courier, monospace;
 font-size: 150%;
 position: relative;
 }
+=======
+>>>>>>> d52d765352dbf536db54037169dd5eeff4e063f6
