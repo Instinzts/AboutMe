@@ -1,16 +1,16 @@
 body {
-    background: #353333;
-    float: inline-start;
-    position: inherit;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    border-top: 6px #AD91FF solid !important;
-    line-height: 23px;
-    margin-top: 50px;
+background: #353333;
+float: inline-start;
+position: inherit;
+text-align: center;
+color: white;
+text-decoration: none;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+border-top: 6px #AD91FF solid !important;
+line-height: 23px;
+margin-top: 50px;
 }
 #pfp {
     border-radius: 100%;
