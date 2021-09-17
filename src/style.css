@@ -12,6 +12,9 @@ border-top: 6px #AD91FF solid !important;
 line-height: 23px;
 margin-top: 50px;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 #pfp {
     border-radius: 100%;
 }
