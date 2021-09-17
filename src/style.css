@@ -8,7 +8,6 @@ text-decoration: none;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 text-rendering: optimizeLegibility;
-border-top: 6px #AD91FF solid !important;
 line-height: 23px;
 margin-top: 50px;
 }
@@ -20,6 +19,9 @@ body::-webkit-scrollbar {
 }
 #none {
     margin: 30px;
+}
+i {
+    font-size: 100px;
 }
 h1 {
 text-align: center;
