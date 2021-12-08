@@ -149,7 +149,7 @@ body {
     cursor: pointer;
     transition: 1.5s;
     }
-    #button6 {
+    #clickable {
     color: rgb(9, 57, 121);
     border-radius: 30px;
     line-height: 3;
@@ -185,7 +185,7 @@ body {
     box-shadow: 0 5px 30px 0 #e874d0 inset,  0 5px 30px 0 #e874d0 inset, 
                 0 5px 30px 0 #e874d0 inset,  0 5px 30px 0 #e874d0 inset; 
     }
-    #button6:hover {
+    #clickable:hover {
     box-shadow: 0 5px 30px 0 rgb(204, 142, 240) inset,  0 5px 30px 0 rgb(204, 142, 240) inset, 
                 0 5px 30px 0 rgb(204, 142, 240) inset, 0 5px 30px 0 rgb(204, 142, 240) inset; 
     }
