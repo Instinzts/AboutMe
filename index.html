@@ -11,33 +11,58 @@
 content="https://cdn.discordapp.com/avatars/297133495149527042/635ef5a99b6db45c76ffa3a99d81ed49.webp">
 <link rel="stylesheet" href="src/animations/animation.css">
 <link rel="stylesheet" href="src/animations/fade.css">
-<title>Zen1th#7272</title>
+ <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-   <h1> Hello, My Name Is <span class="note"> Zen1th#7272 </span></h1>
-   <div class="container">
-      <img id="pfp" src="https://avatars.githubusercontent.com/u/65027812?v=4" alt="pfp" width="120px">
-   <p> > I'm A Harvard Student Whos Majoring In Engineering </p>
-   <p> > I'm A Verified Discord Bot Developer Whos Currently Studying To Become A Full Front/Backend Developer </p>
-   <p> > Languages I'm Currently Learning Are: </p>
-      <span class= "button" onclick="location.href='https://devdocs.io/javascript';">JAVASCRIPT</span>
-      <span class= "button2"onclick="location.href='https://developer.mozilla.org/en-US/docs/Web/HTML';">HTML</span>
-      <span class= "button3"onclick="location.href='https://devdocs.io/css/';">CSS</span>
-      <span class= "button4"onclick="location.href='https://docs.python.org/3/';">PYTHON</span>
-      <span class= "button5"onclick="location.href='https://docs.microsoft.com/en-us/cpp/cpp/?view=msvc-160';">C++</span>
-   </div>
-   <div class="heading">
-   </style>
-   <div class="gfm-embed" data-url="https://www.gofundme.com/f/help-fredy-melgar-on-his-road-to-recovery/widget/large/"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
-   <a href="https://top.gg/bot/765580211701547048">
-     <img id="none" src="https://top.gg/api/widget/765580211701547048.svg" alt="none" width="250px"/>
-   </a>
-      <h1 class="title">It's time to use Royal Support in your server.</h1>
-      <p class="subtitle">Royal Support is a multi-purpose bot ready to skill up and boost up your Discord server<br />Also features Auto-Moderation, Administration, much more!</p>
-      <span class="container2" id="clickable" onclick="location.href='https://discord.com/oauth2/authorize?client_id=765580211701547048&scope=bot&permissions=268445758';">Royal Support Invite</span>
-  </div>
-</div class="footer">
-<h1 class="footer">Website Designed By Zen1th#7272</h1>
-</div>
+    <header class="header">
+        <a href="#" class="logo">Zen1th</a>
+        <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        </nav>
+        <script>
+        window.addEventListener('scroll', function() {
+            var logo = document.querySelector('.logo');
+            var header = document.querySelector('.header');
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          
+            if (scrollTop > 0) {
+                logo.classList.add('hidden');
+                header.style.background = '#081b29'; // Optional: Change header background color when logo disappears
+            } else {
+                logo.classList.remove('hidden');
+                header.style.background = 'transparent'; // Optional: Restore header background color when logo reappears
+            }
+        });
+        </script>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Zen1th</h1>
+            <img id="pfp" src="https://avatars.githubusercontent.com/u/65027812?v=4" alt="pfp" width="120px">
+            <h3>Frontend Developer</h3>
+            <div class="btn-box">
+                <a href="#">Contact Me</a>
+                <a href="#about">About Me</a>
+            </div>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+    <section id="about" class="About-Me">
+        <div>
+            <h1>About Me</h1>
+            <h3> I'm A Harvard Student Whos Majoring In Engineering </h3>
+            <h3> I'm A Verified Discord Bot Developer Whos Currently Studying To Become A Full Front/Backend Developer </h3>
+            <h3> Languages I'm Currently Learning: </h3>
+            <span class= "button" onclick="location.href='https://devdocs.io/javascript';">JAVASCRIPT</span>
+            <span class= "button2"onclick="location.href='https://developer.mozilla.org/en-US/docs/Web/HTML';">HTML</span>
+            <span class= "button3"onclick="location.href='https://devdocs.io/css/';">CSS</span>
+            <span class= "button4"onclick="location.href='https://docs.python.org/3/';">PYTHON</span>
+            <span class= "button5"onclick="location.href='https://docs.microsoft.com/en-us/cpp/cpp/?view=msvc-160';">C++</span>
+        </div>
+    </section>
+    </div class="footer">
+        <h1 class="footer">Website Designed By Zen1th#7272</h1>
+    </div>
 </body>
 </html>
