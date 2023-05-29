@@ -1,196 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-background: #353535;
-float: inline-start;
-position: inherit;
-text-align: center;
-color: white;
-text-decoration: none;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-text-rendering: optimizeLegibility;
-line-height: 23px;
-margin-top: 50px;
+    background: #081b29;
+    color: rgb(126, 74, 209);
 }
+
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 1;
+    /* Set initial opacity to 1 */
+    transition: opacity 0.3s ease;
+    /* Add a transition for smooth fade */
+}
+
+.logo.hidden {
+    opacity: 0;
+    /* Set opacity to 0 when hidden class is applied */
+}
+
+.logo::before {
+    content: '';
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+/*Navbar Section - Controls the action and settings of the Home, About, Services, Porfolio, Contact Menus*/
+.navbar a {
+    font-size: 18px;
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 34px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(190, 178, 178);
+}
+
+.home {
+    height: 100vh;
+    background: none;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: crimson;
+    margin: 20px 0 40px;
+}
+
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.5s;
+    z-index: 2;
+}
+
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #00abf0;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+/*
+.home-imgHover {
+   position: absolute;
+   top: 0;
+   right: 30px;
+   width: 700px;
+   height: 100%;
+   background: transparent;
+   transition: 3s;
+   animation: maniActiveHover .1s forwards;
+   animation-delay: 2s;
+   pointer-events: none;
+}
+
+.home-imgHover:hover {
+    background: #081b29;
+    opacity: .8;
+}
+
+.home-imgHover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 3s;
+    z-index: 100;
+}
+*/
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes maniActiveHover {
+    100% {
+        pointer-events: auto;
+    }
+}
+
+@keyframes Zen1th {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -18px;
+    }
+
+    100% {
+        top: 0.2px;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+@keyframes Zen1th {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -18px;
+    }
+
+    100% {
+        top: 0.2px;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
 #pfp {
-    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    animation-name: Zen1th;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    /* Add any additional styles for the avatar */
 }
-#none {
-    margin: 30px;
+
+/* Media Query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    #pfp {
+        width: 200px;
+        height: 200px;
+    }
 }
-i {
-    font-size: 100px;
+
+/* Media Query for larger screens */
+@media only screen and (min-width: 1200px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    #pfp {
+        width: 400px;
+        height: 400px;
+    }
 }
-h1 {
-text-align: center;
-text-shadow: transparent;
-color: rgb(252, 249, 249);
-font-family: courier;
-font-size: 150%;
-position: relative;
-border-left: 0px solid rgb(255, 255, 255);
-padding: 30px;
-margin: 50px;
-background-color: rgb(112, 111, 111);
+
+.About-Me {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    color: #ededed;
+    padding: 60px 0;
 }
-.container {
-font-family: 'Courier New', Courier, monospace;
-font-size: 150%;
-top: 50%;
-left: 50%;
+
+.About-Me h1 {
+    position: relative;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
-.container2 {
- font-family: 'Courier New', Courier, monospace;
- font-size: 120%;
- top: 50%;
-}
-.heading h1{
-text-align: center;
-font-size: 15px !important;
-border: 1px inset #423d50;
-padding: 10px;
-margin: 20px;
-background-color: #7f7892!important;
-}
-.title {
-line-height: 40px !important;
-margin-bottom: -2px !important;
-font-size: 16px !important
-}
-.subtitle {
-color: rgba(255, 255, 255, 0.994) !important;
-font-size: 15px !important;
-font-family: 'Courier New', Courier, monospace;
-}
-.button {
-color: rgb(14, 205, 238);
-border-radius: 30px;
-line-height: 3;
-border: 1px solid rgb(14, 205, 238);
-padding: 5px;
-margin: 10px;
-position: relative;
-text-align: center;
-width: 20px;
-text-transform: uppercase;
-cursor: pointer;
-transition: 1.5s;
-}
-.note {
-color: rgb(15, 157, 252);
-text-decoration: underline;
+
+.About-Me h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding: 10px;
 
 }
-.button2 {
-color: rgb(230, 109, 28);
-border-radius: 30px;
-line-height: 3;
-border: 1px solid rgb(230, 109, 28);
-padding: 5px;
-margin: 10px;
-position: relative;
-text-align: center;
-width: 20px;
-padding: 5px;
-margin: 10px;
-text-transform: uppercase;
-cursor: pointer;
-transition: 1.5s;
+
+.About-Me div {
+    max-width: 600px;
+    margin: 0 auto;
 }
-.button3 {
-color: rgb(238, 167, 14);
-border-radius: 30px;
-line-height: 3;
-border: 1px solid rgb(238, 167, 14);
-padding: 5px;
-margin: 10px;
-position: relative;
-text-align: center;
-width: 20px;
-padding: 5px;
-margin: 10px;
-text-transform: uppercase;
-cursor: pointer;
-transition: 1.5s;
+
+
+
+
+/* ...existing CSS code... */
+
+/* Add the following rules for the hover effect */
+
+.About-Me:hover {
+    box-shadow: 0 5px 30px 0 #93e7f2 inset, 0 5px 30px 0 #93e7f2 inset,
+        0 5px 30px 0 #93e7f2 inset, 0 5px 30px 0 #93e7f2 inset;
+    transition: 0.5s;
 }
-.button4 {
-color: rgb(89, 240, 51);
-border-radius: 30px;
-line-height: 3;
-border: 1px solid rgb(89, 240, 51);
-padding: 5px;
-margin: 10px;
-position: relative;
-text-align: center;
-width: 20px;
-padding: 5px;
-margin: 10px;
-text-transform: uppercase;
-cursor: pointer;
-transition: 1.5s;
-}
-.button5 {
-color: rgb(238, 14, 126);
-border-radius: 30px;
-line-height: 3;
-border: 1px solid rgb(238, 14, 126);
-padding: 5px;
-margin: 10px;
-position: relative;
-text-align: center;
-width: 20px;
-padding: 5px;
-margin: 10px;
-text-transform: uppercase;
-cursor: pointer;
-transition: 1.5s;
-}
-#clickable {
-color: rgb(204, 142, 240);
-border-radius: 30px;
-line-height: 3;
-border: 1px solid rgb(204, 142, 240);
-padding: 5px;
-margin: 10px;
-position: relative;
-text-align: center;
-width: 20px;
-padding: 5px;
-margin: 10px;
-text-transform: uppercase;
-cursor: pointer;
-transition: 1.5s;
-}
-.button:hover {
-box-shadow: 0 5px 30px 0 #93e7f2 inset,  0 5px 30px 0 #93e7f2 inset, 
-            0 5px 30px 0 #93e7f2 inset,  0 5px 30px 0 #93e7f2 inset; 
-}
-.button2:hover {
-box-shadow: 0 5px 30px 0 #fc9b5a inset,  0 5px 30px 0 #fc9b5a inset, 
-            0 5px 30px 0 #fc9b5a inset,  0 5px 30px 0 #fc9b5a inset; 
-}
-.button3:hover {
-box-shadow: 0 5px 30px 0 #f7ee73 inset,  0 5px 30px 0 #f7ee73 inset, 
-            0 5px 30px 0 #f7ee73 inset,  0 5px 30px 0 #f7ee73 inset; 
-}
-.button4:hover {
-box-shadow: 0 5px 30px 0 #97f577 inset,  0 5px 30px 0 #97f577 inset, 
-            0 5px 30px 0 #97f577 inset,  0 5px 30px 0 #97f577 inset; 
-}
-.button5:hover {
-box-shadow: 0 5px 30px 0 #e874d0 inset,  0 5px 30px 0 #e874d0 inset, 
-            0 5px 30px 0 #e874d0 inset,  0 5px 30px 0 #e874d0 inset; 
-}
-#clickable:hover {
-box-shadow: 0 5px 30px 0 rgb(204, 142, 240) inset,  0 5px 30px 0 rgb(204, 142, 240) inset, 
-            0 5px 30px 0 rgb(204, 142, 240) inset, 0 5px 30px 0 rgb(204, 142, 240) inset; 
-}
+
 .footer {
-color: white;
-font-family: 'Courier New', Courier, monospace;
-font-size: 120%;
-position: relative;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #081b29;
+    color: #ededed;
+}
+
+/* Add the following rules for the hover effect */
+
+.footer:hover {
+    box-shadow: 0 5px 30px 0 #93e7f2 inset, 0 5px 30px 0 #93e7f2 inset,
+        0 5px 30px 0 #93e7f2 inset, 0 5px 30px 0 #93e7f2 inset;
+    transition: 0.5s;
+}
+
+
+
+/* ...remaining CSS code... */
+
+.button {
+    color: rgb(14, 205, 238);
+    border-radius: 30px;
+    line-height: 3;
+    border: 1px solid rgb(14, 205, 238);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.button2 {
+    color: rgb(230, 109, 28);
+    border-radius: 30px;
+    line-height: 3;
+    border: 1px solid rgb(230, 109, 28);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.button3 {
+    color: rgb(238, 167, 14);
+    border-radius: 30px;
+    line-height: 3;
+    border: 1px solid rgb(238, 167, 14);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.button4 {
+    color: rgb(89, 240, 51);
+    border-radius: 30px;
+    line-height: 5;
+    border: 1px solid rgb(89, 240, 51);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.button5 {
+    color: rgb(238, 14, 126);
+    border-radius: 30px;
+    line-height: 3;
+    border: 1px solid rgb(238, 14, 126);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+#clickable {
+    color: rgb(204, 142, 240);
+    border-radius: 30px;
+    line-height: 3;
+    border: 1px solid rgb(204, 142, 240);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.button:hover {
+    box-shadow: 0 5px 30px 0 #93e7f2 inset, 0 5px 30px 0 #93e7f2 inset,
+        0 5px 30px 0 #93e7f2 inset, 0 5px 30px 0 #93e7f2 inset;
+}
+
+.button2:hover {
+    box-shadow: 0 5px 30px 0 #fc9b5a inset, 0 5px 30px 0 #fc9b5a inset,
+        0 5px 30px 0 #fc9b5a inset, 0 5px 30px 0 #fc9b5a inset;
+}
+
+.button3:hover {
+    box-shadow: 0 5px 30px 0 #f7ee73 inset, 0 5px 30px 0 #f7ee73 inset,
+        0 5px 30px 0 #f7ee73 inset, 0 5px 30px 0 #f7ee73 inset;
+}
+
+.button4:hover {
+    box-shadow: 0 5px 30px 0 #97f577 inset, 0 5px 30px 0 #97f577 inset,
+        0 5px 30px 0 #97f577 inset, 0 5px 30px 0 #97f577 inset;
+}
+
+.button5:hover {
+    box-shadow: 0 5px 30px 0 #e874d0 inset, 0 5px 30px 0 #e874d0 inset,
+        0 5px 30px 0 #e874d0 inset, 0 5px 30px 0 #e874d0 inset;
+}
+
+#clickable:hover {
+    box-shadow: 0 5px 30px 0 rgb(204, 142, 240) inset, 0 5px 30px 0 rgb(204, 142, 240) inset,
+        0 5px 30px 0 rgb(204, 142, 240) inset, 0 5px 30px 0 rgb(204, 142, 240) inset;
 }
 
